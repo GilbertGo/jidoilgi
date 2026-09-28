@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Map Diary</title>
+<script>
+// 지도일기는 Map Diary로 이름과 주소가 바뀌었어요. 예전 링크(?s=…#k=… 등)를 그대로 새 주소로 넘겨요.
+location.replace('../mapdiary/' + location.search + location.hash);
+</script>
+<style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#F4F0E6;color:#1E3B2F;font:16px/1.5 -apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif}a{color:#2D6A4F}</style>
+</head>
+<body>
+<p>Map Diary로 옮겨 가는 중이에요… <a id="go" href="../mapdiary/">바로 가기</a></p>
+<script>document.getElementById('go').href = '../mapdiary/' + location.search + location.hash;</script>
+</body>
+</html>
